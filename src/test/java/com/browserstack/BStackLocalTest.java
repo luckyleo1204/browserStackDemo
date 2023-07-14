@@ -11,4 +11,10 @@ public class BStackLocalTest extends SeleniumTest {
 
         Assert.assertTrue(driver.getTitle().contains("BrowserStack Local"));
     }
+
+    @Test
+    public void getTilte(){
+        driver.get("http://www.google.com");
+        Assert.assertTrue((driver.getTitle().contains("Google")));
+    }
 }
