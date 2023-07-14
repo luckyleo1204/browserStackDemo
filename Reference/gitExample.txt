@@ -1,0 +1,45 @@
+PS C:\practiceWorkBench\testng-browserstack> git add *
+PS C:\practiceWorkBench\testng-browserstack> git commit -m "first commit"
+[master b02f488] first commit
+ Committer: Murali C <murc@publicisgroupe.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+PS C:\practiceWorkBench\testng-browserstack> git branch -M main
+PS C:\practiceWorkBench\testng-browserstack> git remote add origin https://github.com/luckyleo1204/browserStackDemo.git
+error: remote origin already exists.
+PS C:\practiceWorkBench\testng-browserstack> git remote add origin https://github.com/luckyleo1204/browserStackDemo1.git
+error: remote origin already exists.
+PS C:\practiceWorkBench\testng-browserstack> git remote set-url origin  https://github.com/luckyleo1204/browserStackDemo.git
+PS C:\practiceWorkBench\testng-browserstack> git remote -v 
+origin  https://github.com/luckyleo1204/browserStackDemo.git (fetch)
+origin  https://github.com/luckyleo1204/browserStackDemo.git (push)
+PS C:\practiceWorkBench\testng-browserstack> git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:master
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+To avoid automatically configuring an upstream branch when its name
+won't match the local branch, see option 'simple' of branch.autoSetupMerge
+in 'git help config'.
+
+PS C:\practiceWorkBench\testng-browserstack> git push origin/main                                                           
+fatal: 'origin/main' does not appear to be a git repository
+fatal: Could not read from remote repository.
